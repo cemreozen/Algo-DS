@@ -1,5 +1,7 @@
 package main
 
+import ("fmt")
+
 func binary_search(data []int, value int) bool {
 	var array_length int = len(data) - 1
 	var starting_index int = 0
@@ -17,3 +19,11 @@ func binary_search(data []int, value int) bool {
 	 }
 	 return false
  }
+
+ func main() {
+	 array := []int{9, 21, 56, 34}
+	 result := binary_search(array, 21)
+	 fmt.Println(result)
+ }
+
+
